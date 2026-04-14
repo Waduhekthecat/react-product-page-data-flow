@@ -1,14 +1,24 @@
 import { useMemo, useState } from "react";
 import "./App.css";
 
+// product card: name, media, price, description, details/specs, cta
+
 const product = {
-  name:"",
-  tagline:"",
+  name: "",
+  media: [
+    {
+      type: "image",
+      src: "",
+      alt: "",
+      primary: true,
+    },
+  ],
   price: 0,
-  variants: ["","",""],
-  highlights: ["","",""],
   description: "",
-  details: ["","",""]
+  specs: {},
+  tagline: "",
+  variants: [""],
+  highlights: [""],
 }
 
 function App() {
